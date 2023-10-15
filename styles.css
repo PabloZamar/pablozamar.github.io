@@ -1,0 +1,86 @@
+/* Add a subtle background color to the body */
+.body-class {
+  background-color: #EFEEF7;
+}
+
+/* Apply a contrasting color to the header background and change font color */
+.header-class {
+  background-color: #050E41;
+  color: #F3F4F9;
+}
+
+/* Style the navigation bar */
+.nav-class {
+  background-color: #C9EEE6;
+  color: #032E25;
+}
+
+/* Make the active page link bold */
+.nav-class .nav-link-class {
+  font-weight: bold;
+}
+
+/* Apply distinct colors to heading classes */
+.title-class {
+  color: #F3F4F9; /* Blue */
+}
+
+.section-title-class {
+  color: #1B7944; /* Green */
+}
+
+/* Change font color for text-class */
+.text-class {
+  color: #010033; /* Dark gray for better contrast with background */
+}
+
+/* Give images a border with a complementary color */
+.image-class {
+  border: 2px solid #007acc; /* Blue border */
+}
+
+/* Style form fields and submit buttons */
+.form-class {
+  background-color: #E9EAF1; /* Light gray */
+  padding: 10px;
+}
+
+.input-class {
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 5px;
+}
+
+.button-class {
+  background-color: #007acc; /* Blue button background */
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the footer */
+.footer-class {
+  background-color: #4EF899;
+  color: #EBF4EB;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Ensure accessibility by providing sufficient color contrast */
+
+/* Alt text for images */
+.image-class {
+  alt: "CSS Crusher - Home";
+}
+
+/* Readable text with clear fonts and adequate text size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #02041E;
+}
+
+/* Style the FAQ question titles */
+.faq-question-class {
+  color: #114C2B; /* Orange */
+}
