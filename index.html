@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub - Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #8E0606;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            text-align: left;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #find-charities-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        #find-charities-section img {
+            width: 300px;
+            height: 200px;
+            margin-right: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .find-charities-button {
+            display: inline-block;
+            align-items: center; 
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        #additional-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        #additional-images img {
+            width: 200px;
+            height: 150px;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #additional-images figcaption {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HelpHub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charities.html">Charities</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="user-options">
+            <a href="#" style="color: #fff;">Log In</a> | <a href="#" style="color: #fff;">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <h2>Welcome to HelpHub</h2>
+        <h3>Your Hub for Community Engagement</h3>
+
+        <div id="find-charities-section">
+            <p>
+                HelpHub's mission is to create a hub where people can find ways to help their community. 
+                The platform aims to connect passionate volunteers with local charities, fostering a sense 
+                of community engagement, interaction, and generosity. By providing a centralized space, HelpHub 
+                strives to make it easy for individuals to discover and support charities in their area, 
+                ultimately contributing to the betterment of the community as a whole. Whether it's through 
+                volunteering time, skills, or resources, HelpHub encourages users to actively participate 
+                in making a positive impact on their local communities.
+            </p>
+            <figure id="find-charities-section img">
+                <img src="https://www.econlib.org/wp-content/uploads/2018/02/Charity-scaled.jpeg" alt="Find Charities Image" width="300" height="200" style="border: 2px solid #ddd; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            </figure>
+
+            <div id="find-charities-button">
+                <a href="charities.html" class="find-charities-button">FIND CHARITIES</a>
+            </div>
+        </div>
+
+        <figure id="additional-images">
+            <div>
+                <img src="https://wellbeingmagazine.s3.eu-west-1.amazonaws.com/wp-content/uploads/2019/11/Unicef-%E2%80%93-A-Vital-Education-Charity-in-Thailand.jpg" alt="Empowering lives through education">
+                <figcaption>Empowering lives through education</figcaption>
+            </div>
+            <div>
+                <img src="https://audreyfoundation.org/wp-content/uploads/2020/08/habitat.jpg" alt="Building homes and hope">
+                <figcaption>Building homes and hope</figcaption>
+            </div>
+            <div>
+                <img src="https://www.arborcompany.com/hubfs/Images%20%5B2020%5D/Check%20Out%20These%20Organizations%20That%20Help%20Senior%20Citizens.jpg" alt="Caring for our elderly community">
+                <figcaption>Caring for our elderly community</figcaption>
+            </div>
+        </figure>
+    </main>
+
+    <footer>
+        <small>
+            About Us | Contact Us | Privacy Policy | Terms of Service | 
+            Social Media | © 2023 HelpHub. All rights reserved.
+        </small>
+    </footer>
+</body>
+</html>

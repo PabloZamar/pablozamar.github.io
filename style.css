@@ -1,0 +1,164 @@
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6
+}
+
+header {
+    background-color: #FCCBC6;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+#find-charities-section {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+#find-charities-section img {
+    width: 300px;
+    height: 200px;
+    margin-left: 2rem; 
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.find-charities-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+main {
+    text-align: left;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin-bottom: 1rem; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h1{
+    color: #FFD1D1;
+}
+
+h2 {
+    color: #BC1D1D;
+}
+
+h3 {
+    color: #670606;
+}
+
+a {
+    color: #FFD1D1;
+}
+
+a:hover {
+    color: #E8FFC0;
+}
+
+.find-charities-button, .learn-more-button, .volunteer-button, .donate-button, #more-charities-button, .information-button, input[type="submit"], select {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #470202;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.find-charities-button:hover, .learn-more-button:hover, .volunteer-button:hover, .donate-button:hover, #more-charities-button:hover, .information-button:hover, input[type="submit"]:hover, select:hover {
+    background-color: #470202;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#search-filter-section {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a:focus, button:focus, input:focus, select:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+body, p {
+    line-height: 1.6;
+}
+.additional-details {
+    display: none; 
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 300px;
+}

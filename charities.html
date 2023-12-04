@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub - Charities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #8E0606;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            text-align: center;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px; 
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        #search-filter-section {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .filter-sort-options {
+            display: flex;
+            align-items: center;
+        }
+
+        .filter-sort-options select {
+            margin-right: 10px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .charity {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .charity img {
+            width: 100%; 
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .charity-details {
+            position: relative; 
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+            min-height: 150px; 
+        }
+
+        .additional-details {
+            position: absolute; 
+            top: 100%; 
+            left: 0;
+            width: 100%;
+            max-height: 35px;
+            overflow: auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+            padding: 10px;
+            display: none;
+            z-index: 1;
+        }
+
+        .learn-more-button {
+            display: inline-block;
+            padding: 8px 16px;
+            font-size: 14px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        #more-charities-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed; 
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script src="charities.js"></script>
+</head>
+<body>
+    <header>
+        <h1>HelpHub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charities.html">Charities</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="user-options">
+            <a href="#" style="color: #fff;">Log In</a> | <a href="#" style="color: #fff;">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <h2>Charities</h2>
+
+        <div id="search-filter-section">
+            <input type="text" placeholder="Search...">
+            <div class="filter-sort-options">
+                <label for="filter">Filter:</label>
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="education">Education</option>
+                    <option value="homelessness">Homelessness</option>
+                    <option value="elderly">Elderly Care</option>
+                    <option value="health">Health</option>
+                </select>
+                <label for="sort">Sort:</label>
+                <select id="sort">
+                    <option value="recent">Most Recent</option>
+                    <option value="popular">Most Popular</option>
+                    <option value="alphabetical">Alphabetical</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="charity">
+            <!-- Charity 1 -->
+<div class="charity-details" id="charity1-details">
+    <img src="https://wellbeingmagazine.s3.eu-west-1.amazonaws.com/wp-content/uploads/2019/11/Unicef-%E2%80%93-A-Vital-Education-Charity-in-Thailand.jpg" alt="Charity 1">
+    <h3>1. Empowering Lives Through Education</h3>
+    <p>This charity is dedicated to providing quality education to underprivileged children. Join us in making a difference in young lives.</p>
+    <a href="charity_profile.html" class="learn-more-button">Learn More</a>
+    <div class="additional-details">
+        <p>Number of people helping: 3578</p>
+    </div>
+</div>
+
+<!-- Charity 2 -->
+<div class="charity-details" id="charity2-details">
+    <img src="https://audreyfoundation.org/wp-content/uploads/2020/08/habitat.jpg" alt="Charity 2">
+    <h3>2. Building Homes and Hope</h3>
+    <p>This charity is on a mission to eliminate homelessness. Discover how you can contribute to building a brighter future for those in need.</p>
+    <a href="#" class="learn-more-button">Learn More</a>
+    <div class="additional-details">
+        <p>Number of people helping: 5789</p>
+    </div>
+</div>
+
+<!-- Charity 3 -->
+<div class="charity-details" id="charity3-details">
+    <img src="https://www.arborcompany.com/hubfs/Images%20%5B2020%5D/Check%20Out%20These%20Organizations%20That%20Help%20Senior%20Citizens.jpg" alt="Charity 3">
+    <h3>3. Caring for our Elderly Community</h3>
+    <p>Join now and help in providing care and companionship to the elderly. Your support can bring joy and comfort to those who built our communities.</p>
+    <a href="#" class="learn-more-button">Learn More</a>
+    <div class="additional-details">
+        <p>Number of people helping: 1556</p>
+    </div>
+</div>
+
+<!-- Charity 4 -->
+<div class="charity-details" id="charity4-details">
+    <img src="https://d18unesthp5g3j.cloudfront.net/www.southshorehealth.org/assets/styles/responsive_image/s3/2023-02/healthy-heart-month-photo.jpg?VersionId=Wm0_8m84_00USdibS_bHq1Ecte_fJNks&h=1e7905b8&itok=f4k7Zn6d" alt="Charity 4">
+    <h3>4. Contributing to a healthier lifestyle</h3>
+    <p>Help thousands of people who want to promote a plant-based diet and healthy activities in the community. Make a change now.</p>
+    <a href="#" class="learn-more-button">Learn More</a>
+    <div class="additional-details""
+        <p>Number of people helping: 1048</p>
+    </div>
+</div>
+            
+    <a href="#" id="more-charities-button">MORE CHARITIES</a>
+    </main>
+
+    <footer>
+        <small>
+            About Us | Contact Us | Privacy Policy | Terms of Service | 
+            Social Media | © 2023 HelpHub. All rights reserved.
+        </small>
+    </footer>
+</body>
+</html>

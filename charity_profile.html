@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub - Empowering Lives Through Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #8E0606;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            text-align: center;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px; /* Adjusted margin to accommodate the footer */
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        h3 {
+            color: #8E0606;
+        }
+
+        .charity-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .charity-image {
+            width: 45%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .charity-description {
+            text-align: left;
+            width: 45%;
+            margin-top: 20px;
+        }
+
+        .charity-description p {
+            margin: 0; /* Remove default paragraph margin */
+        }
+
+        .charity-contact {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+        }
+
+        .volunteer-button,
+        .donate-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .mission-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .mission-text {
+            text-align: left;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .impact-image {
+            width: 45%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .information-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed; /* Changed to fixed position */
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HelpHub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charities.html">Charities</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="user-options">
+            <a href="#" style="color: #fff;">Log In</a> | <a href="#" style="color: #fff;">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <h2>Empowering Lives Through Education</h2>
+
+        <div class="charity-section">
+            <img src="https://wellbeingmagazine.s3.eu-west-1.amazonaws.com/wp-content/uploads/2019/11/Unicef-%E2%80%93-A-Vital-Education-Charity-in-Thailand.jpg" alt="EmpowerEd Charity" class="charity-image">
+
+            <div class="charity-description">
+                <h3>Transforming Lives Through Education</h3>
+                <p>    EmpowerEd is committed to providing quality education to underprivileged children, empowering them for a brighter future. Through innovative teaching methods and community engagement, we strive to make a lasting impact on the lives of young minds.</p>
+            </div>
+        </div>
+
+        <div class="charity-contact">
+            <p>Based in Due West, SC.</p>
+            <div class="contact-info">
+                <p>Email: info@empower-ed.org</p>
+                <p>Phone: +8645328654</p>
+                <p>Address: 2 Washington St, Due West, SC</p>
+            </div>
+            <a href="#" class="volunteer-button">VOLUNTEER NOW</a>
+    <form id="volunteer-form" style="display: none;">
+        <h2>Volunteer Now</h2>
+        <p>Please provide your contact information:</p>
+    
+     <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <button type="button" onclick="submitVolunteerForm()">Submit</button>
+
+
+</form>
+
+            <a href="#" class="donate-button">DONATE</a>
+   <form id="donation-form" style="display: none;">
+    <h2>Donate Now</h2>
+    <p>Please enter your donation amount:</p>
+
+    <label for="amount">Amount ($):</label>
+    <input type="number" id="amount" name="amount" min="1" required>
+
+    <button type="button" onclick="submitDonationForm()">Submit Donation</button>
+</form>
+        </div>
+
+        <div class="mission-section">
+            <div class="mission-text">
+                <h3>Our Mission</h3>
+                <p>"To break the cycle of poverty through education, fostering a generation of empowered individuals capable of shaping their destinies."</p>
+                <h3>Impact Highlights</h3>
+                <ul>
+                    <li>Number of children enrolled: 1,255</li>
+                    <li>Success stories: 576</li>
+                    <li>Educational programs and initiatives: 25</li>
+                </ul>
+
+            </div>
+            <img src="https://img1.wsimg.com/isteam/stock/74pag1V/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:1000,cg:true" alt="Impact Highlights" class="impact-image">
+        </div>
+
+        <a href="#" class="information-button">MORE INFORMATION</a>
+    </main>
+
+    <footer>
+        <small>
+            About Us | Contact Us | Privacy Policy | Terms of Service | 
+            Social Media | © 2023 HelpHub. All rights reserved.
+        </small>
+    </footer>
+    <script src="charity_profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Usability Reflection:
+This user-friendly website prioritizes usability with a clean layout, readable fonts, and consistent color scheme, contributing to an intuitive user experience. 
+However, more features could be added to improve the functionality and accessibility of the website. For example: incorporating more navigation aids, ensuring compatibility, creating more htmls to complete the website, etc. 
+Further improvements can be made in providing clearer alternative text for images and enhancing interactive elements.
